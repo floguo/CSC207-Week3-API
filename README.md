@@ -40,6 +40,69 @@ for more information on the API that are useful in the project.
 
 
 ### Example Output of Running Java Code
+Here is an example of the sample output in JSON format:
+
+{
+  "kind": "calendar#events",
+  "etag": "\"etag_value\"",
+  "summary": "Your Calendar Summary",
+  "description": "Your Calendar Description",
+  "updated": "2023-10-10T12:00:00.000Z",
+  "timeZone": "Your Time Zone",
+  "accessRole": "owner",
+  "defaultReminders": [
+    {
+      "method": "popup",
+      "minutes": 30
+    }
+  ],
+  "nextSyncToken": "sync_token_value",
+  "items": [
+    {
+      "kind": "calendar#event",
+      "etag": "\"etag_value\"",
+      "id": "event_id",
+      "status": "confirmed",
+      "htmlLink": "https://www.google.com/calendar/event?eid=event_id",
+      "created": "2023-10-10T10:00:00.000Z",
+      "updated": "2023-10-10T10:30:00.000Z",
+      "summary": "Sample Event",
+      "description": "Event Description",
+      "location": "Event Location",
+      "colorId": "5",
+      "creator": {
+        "email": "creator@example.com",
+        "self": true
+      },
+      "organizer": {
+        "email": "organizer@example.com",
+        "self": true
+      },
+      "start": {
+        "dateTime": "2023-10-11T09:00:00+02:00",
+        "timeZone": "Your Time Zone"
+      },
+      "end": {
+        "dateTime": "2023-10-11T10:00:00+02:00",
+        "timeZone": "Your Time Zone"
+      },
+      "iCalUID": "iCalUID_value",
+      "sequence": 0
+    }
+    // Additional events may follow here...
+  ]
+}
 
 
 ### List of Technical Problems
+Authentication Errors:/
+Blocker: Incorrect or missing authentication credentials to access user's Gcal.
+Solution: Ensure that you have valid and properly configured authentication credentials, such as API keys, OAuth 2.0 tokens, or service account JSON files.
+Authorization Issues:
+
+Blocker: Insufficient permissions or incorrect scope./
+Solution: Verify that your application has been granted the necessary permissions to access Google Calendar data. Double-check the scopes you've requested.
+
+HTTP Request Errors:/
+Blocker: Incorrectly formatted HTTP requests or missing required parameters.
+Solution: Review the API documentation to ensure you're sending the correct HTTP requests, including required headers and query parameters.
