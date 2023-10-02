@@ -2,8 +2,8 @@
 The project we are doing is towards developing a note-taking application.
 
 ### Group Members
-Corinna (Yuxing) Ma (Github: cor1nnama)
-Flora Guo (GitHub: floguo)
+Corinna (Yuxing) Ma (Github: cor1nnama) \
+Flora Guo (GitHub: floguo)\
 Imtiaz Kidwai (Github: imtiaz-kidwai)
 
 Note: this is our group's 2nd repo. We created a new project because we did not set up the Java dependency files during initial project creation.
