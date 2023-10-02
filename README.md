@@ -95,14 +95,14 @@ Here is an example of the sample output in JSON format:
 
 
 ### List of Technical Problems
-Authentication Errors:/
+Authentication Errors:\
 Blocker: Incorrect or missing authentication credentials to access user's Gcal.
 Solution: Ensure that you have valid and properly configured authentication credentials, such as API keys, OAuth 2.0 tokens, or service account JSON files.
 Authorization Issues:
 
-Blocker: Insufficient permissions or incorrect scope./
+Blocker: Insufficient permissions or incorrect scope.\
 Solution: Verify that your application has been granted the necessary permissions to access Google Calendar data. Double-check the scopes you've requested.
 
-HTTP Request Errors:/
+HTTP Request Errors:\
 Blocker: Incorrectly formatted HTTP requests or missing required parameters.
 Solution: Review the API documentation to ensure you're sending the correct HTTP requests, including required headers and query parameters.
